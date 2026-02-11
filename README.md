@@ -28,6 +28,10 @@ Consider keeping logs longer than that, possibly for a whole year.
 
 Remember to log successful and failed login attempt and from which IP, and add alerts for suspicious behavour.
 
+### Pipeline
+
+Disable network access from the CI/CD-pipelines so they only reach domains we trust.
+
 ## .NET
 
 This is a list of things I like to do on .NET apps.
@@ -96,6 +100,13 @@ This will prevent warnings from sneaking into the repo over time.
 ## Frontend
 
 This is a list of things I like to do in frontend projects.
+
+### Package Manager
+
+Make sure lifecycle-scripts are disabled.
+
+Prevent automatic update of minor versions (`^` and `~` in the `package.json`-versions).
+This should be checked by the pipeline.
 
 ### Strict mode
 
