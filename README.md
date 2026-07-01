@@ -96,6 +96,7 @@ See more on [Microsoft's documentation](https://learn.microsoft.com/en-us/dotnet
 
 Make sure that the pipeline fails in warnings, including ReSharper-warnings through [ReSharper command line tools](https://www.jetbrains.com/help/resharper/ReSharper_Command_Line_Tools.html).
 This will prevent warnings from sneaking into the repo over time.
+Make sure to enable [code analysis](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/overview) with recommended or all rules.
 
 ## Frontend
 
