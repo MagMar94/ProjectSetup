@@ -66,6 +66,12 @@ This will help protect against supply chain attacks.
 
 Set up [Central Package Management](https://learn.microsoft.com/en-us/nuget/consume-packages/central-package-management) to ease the dependency management across projects.
 
+#### Potential packages
+
+Some packagages can be installed to help organizing or policing the project.
+
+- `Microsoft.CodeAnalysis.BannedApiAnalyzers`: Prohibit certain symbols, for instance methods or classes.
+
 ### Authorize by default
 
 To prevent the endpoint being open by default, set a [fallback policy](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.authorization.authorizationoptions.fallbackpolicy).
