@@ -32,9 +32,13 @@ Remember to log successful and failed login attempt and from which IP, and add a
 
 Disable network access from the CI/CD-pipelines so they only reach domains we trust.
 
-### Well Known
+### Indexing
 
-Sett `security.txt`.
+Add `robots.txt`, `meta`-tags for robots and/or `X-Robots-Tag`-header to prevent indexation or control what should be indexed.
+
+### security.txt
+
+Sett opp `security.txt`.
 Sørg for å holde den oppdatert via CI-sjekk eller scheduled issue reminder. 
 
 ## .NET
@@ -84,10 +88,6 @@ To prevent the endpoint being open by default, set a [fallback policy](https://l
 ### Check DI registration
 
 Enable [ValidateOnBuild](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.serviceprovideroptions.validateonbuild) to prevent the app from starting if the service registration is invalid.
-
-### Indexing
-
-Add `robots.txt`, `meta`-tags for robots and/or `X-Robots-Tag`-header to prevent indexation or control what should be indexed.
 
 ### Rate limiting
 
