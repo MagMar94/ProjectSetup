@@ -32,6 +32,11 @@ Remember to log successful and failed login attempt and from which IP, and add a
 
 Disable network access from the CI/CD-pipelines so they only reach domains we trust.
 
+### Well Known
+
+Sett `security.txt`.
+Sørg for å holde den oppdatert via CI-sjekk eller scheduled issue reminder. 
+
 ## .NET
 
 This is a list of things I like to do on .NET apps.
